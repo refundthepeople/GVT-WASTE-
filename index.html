@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Where Your Tax Money Really Goes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #00ffae;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00ffae;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .results {
+      margin-top: 40px;
+      max-width: 600px;
+      width: 90%;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .results h3 {
+      color: #ff6161;
+      margin-top: 0;
+    }
+
+    .line {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Track Your ZIP’s Tax Money</h1>
+  <h2>Enter your ZIP code to see where your money really went</h2>
+
+  <input type="text" id="zip" placeholder="e.g. 25705">
+  <button onclick="showData()">Reveal Truth</button>
+
+  <div id="output" class="results" style="display: none;">
+    <h3>ZIP Code: <span id="zipDisplay"></span></h3>
+    <div class="line"><span>Total Collected in Taxes</span><span id="collected"></span></div>
+    <div class="line"><span>Promised for Roads</span><span id="roads"></span></div>
+    <div class="line"><span>Promised for Schools</span><span id="schools"></span></div>
+    <div class="line"><span>Promised for Public Safety</span><span id="safety"></span></div>
+    <div class="line"><span>Sent to State Slush Funds</span><span id="waste"></span></div>
+    <div class="line"><span>Unaccounted / Missing</span><span id="missing"></span></div>
+  </div>
+
+  <div class="footer">
+    Data estimated. For source access, visit FOIA page or contact your city auditor.
+  </div>
+
+  <script>
+    function showData() {
+      const zip = document.getElementById("zip").value.trim();
+      if (zip === "") return alert("Please enter a ZIP code");
+
+      // Placeholder logic - you’ll eventually plug in real data/API
+      const mockData = {
+        collected: "$14,870,000",
+        roads: "$1,200,000",
+        schools: "$2,400,000",
+        safety: "$3,100,000",
+        waste: "$6,000,000",
+        missing: "$2,170,000"
+      };
+
+      document.getElementById("zipDisplay").innerText = zip;
+      document.getElementById("collected").innerText = mockData.collected;
+      document.getElementById("roads").innerText = mockData.roads;
+      document.getElementById("schools").innerText = mockData.schools;
+      document.getElementById("safety").innerText = mockData.safety;
+      document.getElementById("waste").innerText = mockData.waste;
+      document.getElementById("missing").innerText = mockData.missing;
+
+      document.getElementById("output").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
