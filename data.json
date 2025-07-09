@@ -1,0 +1,50 @@
+{
+  "25705": {
+    "collected": "$14,870,000",
+    "roads": "$1,200,000",
+    "schools": "$2,400,000",
+    "safety": "$3,100,000",
+    "waste": "$6,000,000",
+    "missing": "$2,170,000",
+    "sources": {
+      "collected": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+      "roads": "https://www.usaspending.gov/search/?hash=1d8b6a23e79f40b3a13d3ae1cf7cb4ba",
+      "schools": "https://www.usaspending.gov/search/?hash=0e839c51eb6447b2b80535c1d6e89c5e",
+      "safety": "https://www.usaspending.gov/search/?hash=8a16bfa07d9c4e2ba7b8943d50a3b024",
+      "waste": "https://www.usaspending.gov/disaster/covid-19",
+      "missing": "https://oig.hhs.gov/reports-and-publications/oas/"
+    }
+  },
+  "25301": {
+    "collected": "$34,500,000",
+    "roads": "$2,500,000",
+    "schools": "$4,800,000",
+    "safety": "$6,200,000",
+    "waste": "$12,000,000",
+    "missing": "$8,000,000",
+    "sources": {
+      "collected": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+      "roads": "https://www.usaspending.gov/state/west-virginia",
+      "schools": "https://www.cabellschools.com/finance",
+      "safety": "https://www.cityofhuntington.com/city-government/departments/police/",
+      "waste": "https://www.usaspending.gov/disaster/covid-19",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  "26505": {
+    "collected": "$28,700,000",
+    "roads": "$1,800,000",
+    "schools": "$3,600,000",
+    "safety": "$4,200,000",
+    "waste": "$11,000,000",
+    "missing": "$8,100,000",
+    "sources": {
+      "collected": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+      "roads": "https://transportation.wv.gov",
+      "schools": "https://wveis.k12.wv.us",
+      "safety": "https://morgantownwv.gov/246/Police-Department",
+      "waste": "https://www.usaspending.gov/disaster/covid-19",
+      "missing": "https://www.gao.gov"
+    }
+  }
+}
