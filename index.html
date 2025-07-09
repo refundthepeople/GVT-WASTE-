@@ -3,126 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Where Your Tax Money Really Goes</title>
+  <title>Refund the People</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      text-align: center;
+      padding: 2em;
     }
-
     h1 {
-      color: #00ffae;
-      font-size: 2rem;
-      margin-bottom: 10px;
+      color: #d62828;
     }
-
-    h2 {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-
-    input[type="text"] {
-      padding: 12px;
-      width: 80%;
-      max-width: 400px;
+    input {
+      padding: 10px;
+      width: 200px;
       font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      margin-bottom: 20px;
     }
-
     button {
       padding: 10px 20px;
       font-size: 16px;
-      background-color: #00ffae;
-      color: #000;
+      background: #003049;
+      color: white;
       border: none;
-      border-radius: 6px;
       cursor: pointer;
+      margin-left: 10px;
     }
-
-    .results {
-      margin-top: 40px;
-      max-width: 600px;
-      width: 90%;
-      background-color: #1e1e1e;
+    .result {
+      margin-top: 2em;
+      background: white;
       padding: 20px;
       border-radius: 8px;
+      display: inline-block;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .results h3 {
-      color: #ff6161;
+    .result h2 {
       margin-top: 0;
+      color: #2a9d8f;
     }
-
-    .line {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      border-bottom: 1px solid #333;
+    .result p {
+      margin: 6px 0;
     }
-
-    .footer {
-      margin-top: 60px;
-      font-size: 0.8rem;
-      color: #666;
+    .result a {
+      font-size: 12px;
+      color: #555;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <h1>Track Your ZIP’s Tax Money</h1>
-  <h2>Enter your ZIP code to see where your money really went</h2>
+  <h1>Refund the People</h1>
+  <p>Enter your West Virginia ZIP code to see where your tax money really went:</p>
 
-  <input type="text" id="zip" placeholder="e.g. 25705">
-  <button onclick="showData()">Reveal Truth</button>
+  <input id="zipInput" type="text" placeholder="e.g. 25705" maxlength="5"/>
+  <button onclick="lookupZip()">Reveal Truth</button>
 
-  <div id="output" class="results" style="display: none;">
-    <h3>ZIP Code: <span id="zipDisplay"></span></h3>
-    <div class="line"><span>Total Collected in Taxes</span><span id="collected"></span></div>
-    <div class="line"><span>Promised for Roads</span><span id="roads"></span></div>
-    <div class="line"><span>Promised for Schools</span><span id="schools"></span></div>
-    <div class="line"><span>Promised for Public Safety</span><span id="safety"></span></div>
-    <div class="line"><span>Sent to State Slush Funds</span><span id="waste"></span></div>
-    <div class="line"><span>Unaccounted / Missing</span><span id="missing"></span></div>
-  </div>
-
-  <div class="footer">
-    Data estimated. For source access, visit FOIA page or contact your city auditor.
-  </div>
+  <div id="resultContainer" class="result" style="display: none;"></div>
 
   <script>
-    function showData() {
-      const zip = document.getElementById("zip").value.trim();
-      if (zip === "") return alert("Please enter a ZIP code");
+    async function lookupZip() {
+      const zip = document.getElementById('zipInput').value.trim();
+      const container = document.getElementById('resultContainer');
 
-      // Placeholder logic - you’ll eventually plug in real data/API
-      const mockData = {
-        collected: "$14,870,000",
-        roads: "$1,200,000",
-        schools: "$2,400,000",
-        safety: "$3,100,000",
-        waste: "$6,000,000",
-        missing: "$2,170,000"
-      };
+      try {
+        const response = await fetch('data.json');
+        const data = await response.json();
 
-      document.getElementById("zipDisplay").innerText = zip;
-      document.getElementById("collected").innerText = mockData.collected;
-      document.getElementById("roads").innerText = mockData.roads;
-      document.getElementById("schools").innerText = mockData.schools;
-      document.getElementById("safety").innerText = mockData.safety;
-      document.getElementById("waste").innerText = mockData.waste;
-      document.getElementById("missing").innerText = mockData.missing;
+        if (!data[zip]) {
+          container.innerHTML = `<h2>No Data Found</h2><p>We couldn't find tax data for ZIP code <strong>${zip}</strong>.</p>`;
+          container.style.display = 'block';
+          return;
+        }
 
-      document.getElementById("output").style.display = "block";
+        const entry = data[zip];
+        container.innerHTML = `
+          <h2>ZIP Code ${zip}</h2>
+          <p><strong>Total Collected:</strong> ${entry.collected} <a href="${entry.sources.collected}" target="_blank">(source)</a></p>
+          <p><strong>Promised for Roads:</strong> ${entry.roads} <a href="${entry.sources.roads}" target="_blank">(source)</a></p>
+          <p><strong>Promised for Schools:</strong> ${entry.schools} <a href="${entry.sources.schools}" target="_blank">(source)</a></p>
+          <p><strong>Promised for Public Safety:</strong> ${entry.safety} <a href="${entry.sources.safety}" target="_blank">(source)</a></p>
+          <p><strong>Diverted to Slush / Waste:</strong> ${entry.waste} <a href="${entry.sources.waste}" target="_blank">(source)</a></p>
+          <p><strong>Missing / Unaccounted:</strong> ${entry.missing} <a href="${entry.sources.missing}" target="_blank">(source)</a></p>
+        `;
+        container.style.display = 'block';
+      } catch (err) {
+        container.innerHTML = `<h2>Error</h2><p>Failed to load data. Try again later.</p>`;
+        container.style.display = 'block';
+      }
     }
   </script>
 
