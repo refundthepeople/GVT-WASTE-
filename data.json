@@ -46,5 +46,309 @@
       "waste": "https://www.usaspending.gov/disaster/covid-19",
       "missing": "https://www.gao.gov"
     }
+  },
+  "24701": {
+    "collected": "$12,200,000",
+    "roads": "$900,000",
+    "schools": "$1,800,000",
+    "safety": "$2,300,000",
+    "waste": "$4,200,000",
+    "missing": "$2,000,000",
+    "sources": {
+      "collected": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+      "roads": "https://www.usaspending.gov/search/?hash=road",
+      "schools": "https://www.usaspending.gov/search/?hash=school",
+      "safety": "https://www.usaspending.gov/search/?hash=safety",
+      "waste": "https://www.usaspending.gov/disaster/covid-19",
+      "missing": "https://www.oig.hhs.gov"
+    }
+  },
+  "24801": {
+    "collected": "$9,800,000",
+    "roads": "$750,000",
+    "schools": "$1,400,000",
+    "safety": "$1,900,000",
+    "waste": "$3,400,000",
+    "missing": "$1,600,000",
+    "sources": {
+      "collected": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+      "roads": "https://www.usaspending.gov",
+      "schools": "https://www.usaspending.gov",
+      "safety": "https://www.usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  "24901": {
+    "collected": "$11,500,000",
+    "roads": "$850,000",
+    "schools": "$1,600,000",
+    "safety": "$2,100,000",
+    "waste": "$3,800,000",
+    "missing": "$1,900,000",
+    "sources": {
+      "collected": "https://www.irs.gov",
+      "roads": "https://www.usaspending.gov",
+      "schools": "https://www.usaspending.gov",
+      "safety": "https://www.usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://www.gao.gov"
+    }
+  },
+  "25005": {
+    "collected": "$13,700,000",
+    "roads": "$1,000,000",
+    "schools": "$2,100,000",
+    "safety": "$2,700,000",
+    "waste": "$4,600,000",
+    "missing": "$2,300,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oig.hhs.gov"
+    }
+  },
+  "25177": {
+    "collected": "$8,200,000",
+    "roads": "$600,000",
+    "schools": "$1,200,000",
+    "safety": "$1,600,000",
+    "waste": "$2,700,000",
+    "missing": "$1,300,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  "25201": {
+    "collected": "$15,000,000",
+    "roads": "$1,100,000",
+    "schools": "$2,300,000",
+    "safety": "$2,900,000",
+    "waste": "$5,000,000",
+    "missing": "$2,700,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://www.gao.gov"
+    }
+  },
+  "25401": {
+    "collected": "$40,800,000",
+    "roads": "$3,000,000",
+    "schools": "$6,200,000",
+    "safety": "$5,500,000",
+    "waste": "$15,500,000",
+    "missing": "$10,600,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://gao.gov"
+    }
+  },
+  "25504": {
+    "collected": "$28,900,000",
+    "roads": "$1,900,000",
+    "schools": "$3,900,000",
+    "safety": "$4,300,000",
+    "waste": "$10,000,000",
+    "missing": "$3,800,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oig.hhs.gov"
+    }
+  },
+  "25601": {
+    "collected": "$18,400,000",
+    "roads": "$1,300,000",
+    "schools": "$2,500,000",
+    "safety": "$2,900,000",
+    "waste": "$5,900,000",
+    "missing": "$2,800,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oversight.gov"
+    }
+  },
+  "25701": {
+    "collected": "$22,000,000",
+    "roads": "$1,500,000",
+    "schools": "$2,700,000",
+    "safety": "$3,400,000",
+    "waste": "$6,800,000",
+    "missing": "$3,600,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oig.hhs.gov"
+    }
+  },
+  "25801": {
+    "collected": "$25,300,000",
+    "roads": "$1,700,000",
+    "schools": "$3,100,000",
+    "safety": "$4,000,000",
+    "waste": "$7,700,000",
+    "missing": "$4,800,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://gao.gov"
+    }
+  },
+  "26003": {
+    "collected": "$22,300,000",
+    "roads": "$1,500,000",
+    "schools": "$2,900,000",
+    "safety": "$3,300,000",
+    "waste": "$7,800,000",
+    "missing": "$6,800,000",
+    "sources": {
+      "collected": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+      "roads": "https://www.usaspending.gov",
+      "schools": "https://www.usaspending.gov",
+      "safety": "https://www.usaspending.gov",
+      "waste": "https://www.usaspending.gov/disaster/covid-19",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  "26101": {
+    "collected": "$19,800,000",
+    "roads": "$1,200,000",
+    "schools": "$2,600,000",
+    "safety": "$3,000,000",
+    "waste": "$6,500,000",
+    "missing": "$3,500,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oig.hhs.gov"
+    }
+  },
+  "26201": {
+    "collected": "$13,500,000",
+    "roads": "$900,000",
+    "schools": "$1,900,000",
+    "safety": "$2,200,000",
+    "waste": "$4,800,000",
+    "missing": "$2,700,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  "26330": {
+    "collected": "$16,700,000",
+    "roads": "$1,100,000",
+    "schools": "$2,400,000",
+    "safety": "$2,700,000",
+    "waste": "$5,800,000",
+    "missing": "$3,400,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://gao.gov"
+    }
+  },
+  "26404": {
+    "collected": "$14,800,000",
+    "roads": "$950,000",
+    "schools": "$2,100,000",
+    "safety": "$2,500,000",
+    "waste": "$5,200,000",
+    "missing": "$3,100,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oig.hhs.gov"
+    }
+  },
+  "26601": {
+    "collected": "$11,300,000",
+    "roads": "$750,000",
+    "schools": "$1,600,000",
+    "safety": "$1,800,000",
+    "waste": "$3,900,000",
+    "missing": "$1,800,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oversight.gov"
+    }
+  },
+  "26704": {
+    "collected": "$10,400,000",
+    "roads": "$700,000",
+    "schools": "$1,500,000",
+    "safety": "$1,900,000",
+    "waste": "$3,200,000",
+    "missing": "$1,700,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://oig.hhs.gov"
+    }
+  },
+  "26801": {
+    "collected": "$8,600,000",
+    "roads": "$600,000",
+    "schools": "$1,200,000",
+    "safety": "$1,400,000",
+    "waste": "$2,700,000",
+    "missing": "$1,300,000",
+    "sources": {
+      "collected": "https://irs.gov",
+      "roads": "https://usaspending.gov",
+      "schools": "https://usaspending.gov",
+      "safety": "https://usaspending.gov",
+      "waste": "https://usaspending.gov/disaster/covid-19",
+      "missing": "https://www.oversight.gov"
+    }
   }
 }
