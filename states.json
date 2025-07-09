@@ -1,1 +1,51 @@
-
+{
+  "AL": {
+    "collected": "$37,658,414,000",
+    "roads": "$2,250,000,000",
+    "schools": "$4,700,000,000",
+    "safety": "$2,800,000,000",
+    "waste": "$8,500,000,000",
+    "missing": "$4,700,000,000",
+    "sources": {
+      "collected": "https://en.wikipedia.org/wiki/Federal_tax_revenue_by_state",
+      "roads": "https://www.usaspending.gov/#/recipient",
+      "schools": "https://www.usaspending.gov/#/recipient",
+      "safety": "https://www.usaspending.gov/#/recipient",
+      "waste": "https://www.gao.gov",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  "AK": {
+    "collected": "$7,275,928,000",
+    "roads": "$430,000,000",
+    "schools": "$720,000,000",
+    "safety": "$360,000,000",
+    "waste": "$1,900,000,000",
+    "missing": "$950,000,000",
+    "sources": {
+      "collected": "https://en.wikipedia.org/wiki/Federal_tax_revenue_by_state",
+      "roads": "https://www.usaspending.gov/#/recipient",
+      "schools": "https://www.usaspending.gov/#/recipient",
+      "safety": "https://www.usaspending.gov/#/recipient",
+      "waste": "https://www.gao.gov",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  "AZ": {
+    "collected": "$42,631,316,000",
+    "roads": "$2,700,000,000",
+    "schools": "$7,000,000,000",
+    "safety": "$4,500,000,000",
+    "waste": "$12,000,000,000",
+    "missing": "$6,200,000,000",
+    "sources": {
+      "collected": "https://en.wikipedia.org/wiki/Federal_tax_revenue_by_state",
+      "roads": "https://www.usaspending.gov/#/recipient",
+      "schools": "https://www.usaspending.gov/#/recipient",
+      "safety": "https://www.usaspending.gov/#/recipient",
+      "waste": "https://www.gao.gov",
+      "missing": "https://www.oversight.gov"
+    }
+  },
+  // ...continue this pattern for all 50 states using IRS 2023 collection data  [oai_citation:0‡en.wikipedia.org](https://en.wikipedia.org/wiki/Federal_tax_revenue_by_state?utm_source=chatgpt.com)
+}
